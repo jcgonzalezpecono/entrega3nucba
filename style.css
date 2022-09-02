@@ -1,0 +1,369 @@
+/* resetar estilos */
+*{
+    box-sizing: 0px;
+    border: 0;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*font-family: 'Uncial Antiqua', cursive;*/
+}
+/*--------definir algunos colores pricipales de la pagina ---------*/
+
+:root{
+    --color-princial:#dad5cf;
+    --color-secundario:#de720d;
+    --color-letras-titulos:rgba(131, 7, 7, 0.986);
+}
+
+/*-----------------header ------------------*/
+
+header{
+    width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color:var(--color-princial);
+    padding: 5px;   
+    border-bottom:1px solid gray;
+    position: fixed;
+    top: 0px;
+    
+    
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding-left: 10px;
+}
+.logo{
+    width: 35px;
+    height: 60px;
+}
+
+.letras-logo{
+    width: 150px;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-items:center;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.lista-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.lista-menu a{
+    display: flex;
+    color: var(--color-letras-titulos);
+    font-size: 20px;
+    font-family: 'Uncial Antiqua', cursive;
+    text-align: end;
+    border-radius: 10px;
+    padding: 3px;
+
+}
+
+.lista-menu a:hover{
+    background-color: var(--color-letras-titulos);
+    color: aliceblue;
+}
+
+.car-compras{
+    margin-right: 25px;
+    width: 25px;
+    height: auto;
+    display: inline;
+    
+}
+ 
+.car-compras:hover{
+    border-bottom: 1px solid var(--color-letras-titulos);
+}
+
+
+
+/*--------*/
+.lista-compras{
+    top:71px;
+    
+    right: 50px;
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    background-color:var(--color-princial,0.1);
+    border: 1px solid var(--color-letras-titulos);
+    border-radius:10px ;
+    display: none;
+}
+
+label input{
+    display: none !important;
+}
+
+
+#car:checked ~ .lista-compras {
+    display: flex;
+}
+
+#car:checked ~ .car-compras {
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid var(--color-letras-titulos);
+}
+
+
+
+/*------------body------------*/
+
+body{
+    width: 1350px;
+    padding-top: 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--color-princial);
+
+
+   
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 30px;
+    gap: 20px;
+    padding: 90px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+
+}
+
+.principal h1{
+    font-family: 'Uncial Antiqua', cursive;
+    color: var(--color-letras-titulos);
+    font-size: 60px;
+}
+
+
+
+
+.principal p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.principal img{
+    border-radius: 10px;
+}
+
+.principal a{
+    background-color: transparent ;
+    color: var(--color-letras-titulos);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid var(--color-letras-titulos);
+    font-weight: 800;
+}
+
+.principal a:hover{
+    background-color: var(--color-letras-titulos);
+    color: aliceblue;
+    
+}
+
+.info-principal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:5px;
+    margin-left: 30PX;
+    margin-right: 30px;
+    padding: 90px;
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+.info-principal p{
+    text-align: center;
+    font-size: 20px;
+
+}
+
+/*--------secundaria -------------*/ 
+
+.secundario{
+    display: flex;
+    width: 1350;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    
+    
+}
+
+.secundario h2{
+    font-family: 'Uncial Antiqua', cursive;
+    color:var(--color-letras-titulos) ;
+    margin: 30px;
+    font-size: 35px;
+}
+
+.lugares{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    gap:25px;
+    margin-bottom: 20px;
+    
+}
+
+.lugar{
+    /*background-color: rgba(105, 19, 19, 0.2);*/
+    margin: 3px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+.lugar img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.lugar h3{
+    color:var(--color-letras-titulos);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.secundario a{
+    background-color: transparent ;
+    color: var(--color-letras-titulos);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid var(--color-letras-titulos);
+    font-weight: 800;
+}
+
+.secundario a:hover{
+    background-color: var(--color-letras-titulos);
+    color: aliceblue;
+}
+
+/*------------section 3----------*/
+
+
+.contact{
+    width: 1350;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;  
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+
+.contact h1{
+    color: var(--color-letras-titulos);
+    font-size: 35px;
+    font-family: 'Uncial Antiqua', cursive; 
+    margin-bottom: 20px;
+
+}
+
+.info-contact{ 
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.sucursales{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+
+}
+
+.datos{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    margin-top: 20px;
+}
+
+.datos img{
+    width: 30px;
+    height: 30px;
+}
+
+.datos{
+    font-size: 20px;
+}
+.sucursales h3{
+    color: var(--color-letras-titulos);
+    font-size: 28px;
+
+}
+    
+
+/*----------footer---------*/
+
+footer{
+    width: 1350px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5px;
+    background-color: var(--color-princial);
+    border-top: 1px solid gray;
+}
+
+
+footer img{
+    width: 90px;
+    height: 320;
+}
+
+footer p{
+    font-size: 12px;
+
+}
